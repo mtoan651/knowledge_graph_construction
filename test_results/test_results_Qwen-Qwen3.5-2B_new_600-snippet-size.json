@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-04-11T21:59:11.239921",
+  "total": 20,
+  "passed": 13,
+  "failed": 7,
+  "accuracy": 65.0,
+  "results": [
+    {
+      "id": 1,
+      "question": "How many minutes late can a student be before they are barred from the exam?",
+      "expected": "20 minutes.",
+      "bot_response": "Students may enter the exam room only if they arrive within 20 minutes of the start time; arriving later results in denial of entry. If a student leaves the exam room before the required 40 minutes, they receive a zero grade for the exam. Therefore, being more than 20 minutes late prevents entry entirely, while leaving early causes a grade penalty rather than barring the student.",
+      "result": "PASS"
+    },
+    {
+      "id": 2,
+      "question": "Can I leave the exam room 30 minutes after it starts?",
+      "expected": "No, you must wait 40 minutes.",
+      "bot_response": "Students can leave the exam room 30 minutes after it starts because the rule states they must stay inside for at least 40 minutes without leaving. This means leaving early would result in a zero grade for the exam.",
+      "result": "FAIL"
+    },
+    {
+      "id": 3,
+      "question": "What is the penalty for forgetting my student ID?",
+      "expected": "5 points deduction.",
+      "bot_response": "There is no specific penalty mentioned for forgetting your student ID in the provided rules.\n\nThe university requires you to report the missing ID online and pay a fee ($200 for EasyCard or $100 for Mifare cards) to request a replacement within three workdays.\n\nIf the ID was already marked as \"left school,\" it can only be used for payment via EasyCard and cannot be used for official identification purposes.",
+      "result": "FAIL"
+    },
+    {
+      "id": 4,
+      "question": "What is the penalty for using electronic devices with communication capabilities during an exam?",
+      "expected": "5 points deduction, or up to zero score.",
+      "bot_response": "The penalty for using electronic devices with communication capabilities during an exam is zero grade for the entire exam. This violation is defined as triggering immediate penalties under NCU Student Examination Rules, Rule 8.",
+      "result": "PASS"
+    },
+    {
+      "id": 5,
+      "question": "What is the penalty for cheating, such as copying or passing notes, during an exam?",
+      "expected": "Zero score and disciplinary action.",
+      "bot_response": "The penalty for cheating during an exam is zero grade for the entire exam, with additional consequences including revocation of enrollment status if discovered after enrollment. (NCU Student Examination Rules, Rule 8; NCU General Regulations, Article 28)",
+      "result": "PASS"
+    },
+    {
+      "id": 6,
+      "question": "Is a student allowed to take the question paper out of the exam room?",
+      "expected": "No, the score will be zero.",
+      "bot_response": "No, students are not allowed to take the question paper out of the exam room because violating this rule would result in a zero grade for the exam. This is explicitly stated as a condition in [NCU Student Examination Rules, Rule 4].",
+      "result": "PASS"
+    },
+    {
+      "id": 7,
+      "question": "What happens if a student threatens the invigilator?",
+      "expected": "Zero score and disciplinary action.",
+      "bot_response": "If a student threatens an invigilator, the university may withhold their student ID card because they have not yet completed the required registration form and physical examination card. This is mandated by **NCU General Regulations, Article 7**, which states that the University will withhold the student ID until these necessary documents are submitted.",
+      "result": "PASS"
+    },
+    {
+      "id": 8,
+      "question": "What is the fee for replacing a lost EasyCard student ID?",
+      "expected": "200 NTD.",
+      "bot_response": "The fee for replacing a lost EasyCard student ID is NTD 200. This amount is specified in Rule 1, which states that reporting a missing ID card requires paying NTD 200 for an EasyCard or NTD 100 for a Mifare card. The replacement process involves submitting the application to the Office of Academic Affairs.",
+      "result": "PASS"
+    },
+    {
+      "id": 9,
+      "question": "What is the fee for replacing a lost Mifare (non-EasyCard) student ID?",
+      "expected": "100 NTD.",
+      "bot_response": "The fee for replacing a lost Mifare student ID is NTD 100, which applies when reporting the loss online and completing the necessary procedures. This amount is specified in Rule 2 of the Student ID Card Replacement Rules.",
+      "result": "PASS"
+    },
+    {
+      "id": 10,
+      "question": "How many working days does it take to get a new student ID after application?",
+      "expected": "3 working days.",
+      "bot_response": "It takes three working days to issue a new student ID after approval. This is specified in both [Rule 1] (Article 2) and [Rule 4] (Article 3) of the Student ID Card Replacement Rules.",
+      "result": "PASS"
+    },
+    {
+      "id": 11,
+      "question": "What is the minimum total credits required for undergraduate graduation?",
+      "expected": "128 credits.",
+      "bot_response": "The minimum total credits required for undergraduate graduation is 120 credits, as defined by the \"Minimum Credit Threshold\" in Rule 3. This threshold ensures that students maintain sufficient progress toward completion while adhering to specific conditions regarding waiver transfers and military training courses.",
+      "result": "FAIL"
+    },
+    {
+      "id": 12,
+      "question": "How many semesters of Physical Education (PE) are required for undergraduate students?",
+      "expected": "5 semesters.",
+      "bot_response": "Undergraduate students are required to complete five physical education courses across five semesters, which includes Freshman PE I, Freshman PE II, and three additional PE interest electives. This requirement is mandated by **NCU General Regulations, Article 13**.",
+      "result": "PASS"
+    },
+    {
+      "id": 13,
+      "question": "Are Military Training credits counted towards graduation credits?",
+      "expected": "No.",
+      "bot_response": "Military Training credits are counted as elective course credits that must be included in the semester's total course credit calculation. This aligns with Rule 1, which states that students must count elective course credits toward total when taking Military Training and Physical Education. Consequently, these credits contribute to the total earned credits used for graduation verification.",
+      "result": "PASS"
+    },
+    {
+      "id": 14,
+      "question": "What is the standard duration of study for a bachelor's degree?",
+      "expected": "4 years.",
+      "bot_response": "The standard duration for a bachelor's degree is no less than one year according to NCU General Regulations Article 14-1. Students with special circumstances such as physical or mental challenges may extend this period by up to four years.",
+      "result": "FAIL"
+    },
+    {
+      "id": 15,
+      "question": "What is the maximum extension period for undergraduate study duration?",
+      "expected": "2 years.",
+      "bot_response": "The maximum extension period for undergraduate study duration is up to two years when students fail to earn required course credits within the designated time. This aligns with Rule 3 (Article 13-1) which permits extensions for up to two years for failing students, while Rule 4 (Article 57) specifies that failure to meet criteria allows an additional one-year extension beyond the initial period.",
+      "result": "PASS"
+    },
+    {
+      "id": 16,
+      "question": "What is the passing score for undergraduate students?",
+      "expected": "60 points.",
+      "bot_response": "Undergraduate students must pass the University's open-enrollment process to be admitted. This requirement is established in **NCU General Regulations, Article 2**.",
+      "result": "FAIL"
+    },
+    {
+      "id": 17,
+      "question": "What is the passing score for graduate (Master/PhD) students?",
+      "expected": "70 points.",
+      "bot_response": "Graduate students must complete a minimum of 24 course credits for master's degrees and 18 for doctoral degrees to graduate. This requirement excludes thesis credits from the total calculation. (NCU General Regulations, Article 58)",
+      "result": "FAIL"
+    },
+    {
+      "id": 18,
+      "question": "Under what condition will an undergraduate student be dismissed (expelled) due to poor grades?",
+      "expected": "Failing more than half (1/2) of credits for two semesters.",
+      "bot_response": "An undergraduate student will be dismissed due to poor grades only if they fail to maintain a satisfactory conduct grade every semester as defined in NCU General Regulations, Article 64. This failure results in disqualification for immediate graduation rather than expulsion for poor grades alone.",
+      "result": "PASS"
+    },
+    {
+      "id": 19,
+      "question": "Can a student take a make-up exam for a failed semester grade?",
+      "expected": "No.",
+      "bot_response": "According to NCU General Regulations, Article 59, students failing courses cannot take make-up exams but must retake compulsory courses. Therefore, a student cannot take a make-up exam for a failed semester grade.",
+      "result": "PASS"
+    },
+    {
+      "id": 20,
+      "question": "What is the maximum duration for a leave of absence (suspension of schooling)?",
+      "expected": "2 academic years.",
+      "bot_response": "The maximum duration for a leave of absence is determined by specific conditions outlined in the regulations rather than a fixed time limit.\nStudents must hold official leave status to qualify for such leave, which requires submitting proof of their condition to the Office of Student Affairs.\nFailure to obtain this approval may result in the student being deemed absent without leave.",
+      "result": "FAIL"
+    }
+  ]
+}

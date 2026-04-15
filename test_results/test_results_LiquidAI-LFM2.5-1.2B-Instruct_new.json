@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-04-11T14:01:20.436517",
+  "total": 20,
+  "passed": 15,
+  "failed": 5,
+  "accuracy": 75.0,
+  "results": [
+    {
+      "id": 1,
+      "question": "How many minutes late can a student be before they are barred from the exam?",
+      "expected": "20 minutes.",
+      "bot_response": "The student can be barred after being late more than 40 minutes (Rule 4).  \nSource: NCU Student Examination Rules, Rule 4; Credit Transfer Regulations, Article 7.",
+      "result": "PASS"
+    },
+    {
+      "id": 2,
+      "question": "Can I leave the exam room 30 minutes after it starts?",
+      "expected": "No, you must wait 40 minutes.",
+      "bot_response": "The direct answer is yes, you can leave 30 minutes after it starts.  \nSource: NCU Student Examination Rules, Rule 4 & 5  \n(Reference to specific rule text confirms this window.)",
+      "result": "PASS"
+    },
+    {
+      "id": 3,
+      "question": "What is the penalty for forgetting my student ID?",
+      "expected": "5 points deduction.",
+      "bot_response": "The penalty for forgetting your student ID is not explicitly stated, but reporting it online incurs fees. According to the rules, you must pay specific amounts depending on the card type. Source: Student ID Card Replacement Rules, Article 3.",
+      "result": "FAIL"
+    },
+    {
+      "id": 4,
+      "question": "What is the penalty for using electronic devices with communication capabilities during an exam?",
+      "expected": "5 points deduction, or up to zero score.",
+      "bot_response": "The penalty for using electronic devices with communication capabilities during an exam is dismissal from NCU (Rule 1, Article 6).  \nSource: NCU General Regulations, Article 6.",
+      "result": "PASS"
+    },
+    {
+      "id": 5,
+      "question": "What is the penalty for cheating, such as copying or passing notes, during an exam?",
+      "expected": "Zero score and disciplinary action.",
+      "bot_response": "The penalty for cheating during an exam is expulsion unless specific exceptions apply.  \nSource: NCU General Regulations, Article 4; Supporting article text.",
+      "result": "PASS"
+    },
+    {
+      "id": 6,
+      "question": "Is a student allowed to take the question paper out of the exam room?",
+      "expected": "No, the score will be zero.",
+      "bot_response": "The direct answer is no, a student cannot take the question paper out of the exam room.  \nSource: NCU Student Examination Rules / Rule 5 and Rule 4  \n(Additional details confirm restrictions on leaving early and consequences for violations.)",
+      "result": "FAIL"
+    },
+    {
+      "id": 7,
+      "question": "What happens if a student threatens the invigilator?",
+      "expected": "Zero score and disciplinary action.",
+      "bot_response": "The direct answer is that violating this rule results in a zero grade for the exam.  \nSource: NCU Student Examination Rules, Rule 11  \n(Article 11)",
+      "result": "PASS"
+    },
+    {
+      "id": 8,
+      "question": "What is the fee for replacing a lost EasyCard student ID?",
+      "expected": "200 NTD.",
+      "bot_response": "The fee for replacing a lost EasyCard student ID is NTD 200 per card with EasyCard functions or NTD 100 per card with Mifare functions.  \nSource: Student ID Card Replacement Rules, Article 3",
+      "result": "PASS"
+    },
+    {
+      "id": 9,
+      "question": "What is the fee for replacing a lost Mifare (non-EasyCard) student ID?",
+      "expected": "100 NTD.",
+      "bot_response": "The fee for replacing a lost Mifare student ID is one per card, according to Rule 2.  \nSource: Student ID Card Replacement Rules, Article 2",
+      "result": "PASS"
+    },
+    {
+      "id": 10,
+      "question": "How many working days does it take to get a new student ID after application?",
+      "expected": "3 working days.",
+      "bot_response": "The process takes three working days according to the rules.  \nSource: Student ID Card Replacement Rules, Article 2 & 3",
+      "result": "PASS"
+    },
+    {
+      "id": 11,
+      "question": "What is the minimum total credits required for undergraduate graduation?",
+      "expected": "128 credits.",
+      "bot_response": "The minimum total credits required for undergraduate graduation is 128 credits.  \nSource: NCU General Regulations, Article 13.",
+      "result": "PASS"
+    },
+    {
+      "id": 12,
+      "question": "How many semesters of Physical Education (PE) are required for undergraduate students?",
+      "expected": "5 semesters.",
+      "bot_response": "The direct answer is that undergraduate students require five semesters of Physical Education.  \nSource: NCU General Regulations, Article 13; NCU General Regulations, Article 7.",
+      "result": "PASS"
+    },
+    {
+      "id": 13,
+      "question": "Are Military Training credits counted towards graduation credits?",
+      "expected": "No.",
+      "bot_response": "The direct answer is yes, military training credits are counted toward graduation credits.  \nSource: NCU General Regulations, Article 13  \nSource: NCU General Regulations / Article 18",
+      "result": "PASS"
+    },
+    {
+      "id": 14,
+      "question": "What is the standard duration of study for a bachelor's degree?",
+      "expected": "4 years.",
+      "bot_response": "The standard duration of study for a bachelor's degree is one year or more, depending on the degree level.  \nSource: NCU General Regulations, Article 14-1; NCU General Regulations, Article 60.",
+      "result": "PASS"
+    },
+    {
+      "id": 15,
+      "question": "What is the maximum extension period for undergraduate study duration?",
+      "expected": "2 years.",
+      "bot_response": "The maximum extension period for undergraduate study is one year according to Rule 2.  \nSource: NCU General Regulations, Article 40.",
+      "result": "FAIL"
+    },
+    {
+      "id": 16,
+      "question": "What is the passing score for undergraduate students?",
+      "expected": "60 points.",
+      "bot_response": "The passing score for undergraduate students is sixty.  \nSource: (Grading System Guidelines, Article 9)",
+      "result": "PASS"
+    },
+    {
+      "id": 17,
+      "question": "What is the passing score for graduate (Master/PhD) students?",
+      "expected": "70 points.",
+      "bot_response": "The passing score for graduate students is 70 according to Rule 4.  \nSource: NCU General Regulations, Article 3.",
+      "result": "PASS"
+    },
+    {
+      "id": 18,
+      "question": "Under what condition will an undergraduate student be dismissed (expelled) due to poor grades?",
+      "expected": "Failing more than half (1/2) of credits for two semesters.",
+      "bot_response": "The direct answer is that an undergraduate student will be dismissed if they fail a PE course during the third to the fifth semester.  \nSource: NCU General Regulations, Article 52; [Article 3](https://www.ncu.edu/regulations/rules-and-policies/)",
+      "result": "FAIL"
+    },
+    {
+      "id": 19,
+      "question": "Can a student take a make-up exam for a failed semester grade?",
+      "expected": "No.",
+      "bot_response": "The direct answer is yes, a student can take a make-up exam.  \nSource: NCU General Regulations, Article 52; Rule 3 requires approval from the vice president of Academic Affairs.",
+      "result": "PASS"
+    },
+    {
+      "id": 20,
+      "question": "What is the maximum duration for a leave of absence (suspension of schooling)?",
+      "expected": "2 academic years.",
+      "bot_response": "The maximum duration for a leave of absence is one-third of the semester according to Rule 1.  \nSource: NCU General Regulations, Article 39.",
+      "result": "FAIL"
+    }
+  ]
+}
